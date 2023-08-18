@@ -1,0 +1,24 @@
+ <nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="">Domov</a></li>
+    <li class="breadcrumb-item"><a routerLink="/kategorije">Kategorije</a></li>
+                          <!-- routerLink="kategorije" tuki ni delu-->
+    <li class="breadcrumb-item active" aria-current="page">Sadje</li>
+  </ol>
+</nav>
+
+ <div class="card-group">
+   <div *ngFor="let sadje of sadje">
+     <div *ngIf="sadje.kategorija === 'Sadje'">
+       <div class="card">
+         <img src="{{sadje.imgSrc}}" class="card-img-top" alt ="Sadje">
+         <div class="card-body">
+           <div class="text-center">
+             <h5 class="card-title">{{sadje.naziv}}</h5>
+             <a routerLink="/kategorije/{{sadje._id}}" class="btn btn-outline-warning">O izdelku</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>

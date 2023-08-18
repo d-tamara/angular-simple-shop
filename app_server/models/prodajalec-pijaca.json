@@ -1,0 +1,32 @@
+[{
+    "id": "201",
+    "ime": "Jabolčni sok",
+    "slika": "../images/apple-juice.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "202",
+    "ime": "Pomarančni sok",
+    "slika": "../images/orange-juice.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "203",
+    "ime": "Sirup žajbelj",
+    "slika": "../images/sirup-zajbelj.png",
+    "cena": "1 eur/kg",
+    "navoljo": "0"
+  },{
+
+    "id": "204",
+    "ime": "Sirup bezeg",
+    "slika":"../images/sirup-bezeg.png",
+    "cena": "1 eur/kg",
+    "navoljo": "100"
+  }, {
+    "id": "205",
+    "ime": "Sirup meta",
+    "slika": "../images/sirup-meta.png",
+    "cena": "1",
+    "navoljo": "50"
+}]

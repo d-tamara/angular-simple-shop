@@ -1,0 +1,50 @@
+<div class="col-sm-12">
+          <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title"><center>Pozdravljeni, {{ime}} {{priimek}}!</center></h4>
+                </div>
+          </div>
+          </div>
+    
+
+<div class="card-group">
+        <div class="col-sm-6">
+          <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title"><center>Vaš Zabojček</center></h4>
+                  <h5>Seznam izdelkov:</h5><br>
+                <ul>
+                  {{#each zabojcek.izdelkiVZabojcku as |izdelek|}}
+                    <li>
+                      <p>{{izdelek.ime}}</p>
+                      <p>Količina: {{izdelek.kolicina}} Cena: {{izdelek.cena}}</p>
+                    </li>
+                  {{/each}}
+                </ul>
+                <br>
+                    <a href="/kategorije" class="b-right btn btn-warning text-success">Nazaj v trgovino</a>
+                    <button type="submit" action="/zabojcek/{{_id}}" class="btn btn-outline-success text-success">Izbriši vsebino zabojčka</button>
+                </div>
+          </div>
+          </div>
+        
+
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title"><center>Za plačilo</center></h4>
+              <p>Skupna cena: {{zabojcek.cena}}</p>
+              <p>Poštnina: {{zabojcek.postnina}}</p>
+              
+                <h4 class="card-title"><center>Dostava</center></h4>
+                <p>Dostavo vašega zabojčka na dom lahko pričakujete od:</p>
+                <p>{{zabojcek.datumDostave}}</p>
+                
+                <a href="/nakup/{{_id}}" class="b-right btn btn-warning text-success">Nadaljujte s plačilom</a>
+            </div>
+          </div>
+          <br>
+
+        </div>
+      </div>

@@ -1,0 +1,73 @@
+[{
+    "ime": "Damjan",
+    "priimek": "Šalamun",
+    "imeKmetije": "Čebelarstvo in turistična kmetija Šalamun",
+    "naslovKmetije": "Banovci 5 A",
+    "postaKmetije": "9241",
+    "krajKmetije": "Veržej",
+    "podrocjeProdaje": "Ostali pridelki",
+    "email": "ctk.salamun@gmail.com",
+    "geslo": "CebelicaMaja",
+    "telefon": "041 740 676",
+    "izdelki": [{
+            "kategorija": "Ostali pridelki",
+            "ime": "Cvetlični med",
+            "cena": "10 eur/kg",
+            "kolicina": "30"
+        },
+        {
+            "kategorija": "Ostali pridelki",
+            "ime": "Akacijev med",
+            "cena": "11 eur/kg",
+            "kolicina": "20"
+        }
+    ],
+    "narocila": [{
+            "cena": "22 eur",
+            "status": "Plačano",
+            "seznamIzdelkov": ["Akacijev med"]
+        },
+        {
+            "cena": "31 eur",
+            "status": "Plačano",
+            "seznamIzdelkov": ["Akacijev med", "Cvetlični med"]
+
+        }
+    ]
+}, {
+    "ime": "Janez",
+    "priimek": "Rebernik",
+    "imeKmetije": "Kmetija Rebernik",
+    "naslovKmetije": "Pameče 202",
+    "postaKmetije": "2380",
+    "krajKmetije": "Slovenj Gradec",
+    "podrocjeProdaje": "Zelenjava",
+    "email": "rebernik.kmetija@gmail.com",
+    "geslo": "mojaDarja",
+    "telefon": "051 140 236",
+    "izdelki": [{
+            "kategorija": "Zelenjava",
+            "ime": "Paradižnik",
+            "cena": "2 eur/kg",
+            "kolicina": "40"
+        },
+        {
+            "kategorija": "Zelenjava",
+            "ime": "Por",
+            "cena": "2.5 eur/kg",
+            "kolicina": "30"
+        }
+    ],
+    "narocila": [{
+            "cena": "18 eur",
+            "status": "Plačano",
+            "seznamIzdelkov": ["Paradižnik"]
+        },
+        {
+            "cena": "16 eur",
+            "status": "Plačano",
+            "seznamIzdelkov": ["Paradižnik", "Por"]
+
+        }
+    ]
+}]

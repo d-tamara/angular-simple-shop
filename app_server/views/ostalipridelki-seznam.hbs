@@ -1,0 +1,66 @@
+{{!--<div class="row banner">--}}
+{{!--  <div class="col-12">--}}
+{{!--    <h1><small>Kaj želite naročiti danes?</small></h1>--}}
+{{!--  </div>--}}
+{{!--</div>--}}
+{{!--<div class="card-group">--}}
+{{!--				<div class="card">--}}
+{{!--					<img src="../images/honey-jar.png" class="card-img-top" alt="...">--}}
+{{!--					<div class="card-body">--}}
+{{!--						<h5 class="card-title">Cvetlični med</h5>--}}
+{{!--						<a href="/kategorije/ostalipridelki/izdelek" class="btn btn-outline-warning">O izdelku</a>--}}
+{{!--					</div>--}}
+{{!--				</div>--}}
+{{!--				<div class="card">--}}
+{{!--					<img src="../images/jam.png" class="card-img-top" alt="...">--}}
+{{!--					<div class="card-body">--}}
+{{!--						<h5 class="card-title">Jagodna marmelada</h5>--}}
+{{!--						<a href="/kategorije/ostalipridelki/izdelek" class="btn btn-outline-warning">O izdelku</a>--}}
+{{!--				 </div>--}}
+{{!--				</div>--}}
+{{!--				<div class="card">--}}
+{{!--					<img src="../images/eggs.png" class="card-img-top" alt="...">--}}
+{{!--					<div class="card-body">--}}
+{{!--						<h5 class="card-title">Jajca</h5>--}}
+{{!--						<a href="/kategorije/ostalipridelki/izdelek" class="btn btn-outline-warning">O izdelku</a>--}}
+{{!--					</div>--}}
+{{!--				</div>--}}
+{{!--				<div class="card">--}}
+{{!--						<img src="../images/frozen-yogurt.png" class="card-img-top" alt="...">--}}
+{{!--						<div class="card-body">--}}
+{{!--							<h5 class="card-title">Jogurt</h5>--}}
+{{!--							<a href="/kategorije/ostalipridelki/izdelek" class="btn btn-outline-warning">O izdelku</a>--}}
+{{!--						</div>--}}
+{{!--					</div>--}}
+{{!--					<div class="card">--}}
+{{!--						<img src="../images/milk.png" class="card-img-top" alt="...">--}}
+{{!--						<div class="card-body">--}}
+{{!--							<h5 class="card-title">Mleko</h5>--}}
+{{!--							<a href="/kategorije/ostalipridelki/izdelek" class="btn btn-outline-warning">O izdelku</a>--}}
+{{!--						</div>--}}
+{{!--					</div>--}}
+{{!--			</div>--}}
+
+<nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="/">Domov</a></li>
+					<li class="breadcrumb-item"><a href="/kategorije">Kategorije</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Ostali izdelki</li>
+				</ol>
+		</nav>
+		
+<div class="card-group">
+     {{#each ostalipridelki as |pridelki|}}
+     {{#if_eq pridelki.kategorija 'Ostali'}}
+        <div class="card">
+          <img class="card-img-top" src={{pridelki.imgSrc}}>
+          <div class="card-body">
+            <div class="text-center">
+              <h5 class="card-title">{{pridelki.naziv}}</h5>
+              <a href="/ostalipridelki/{{pridelki._id}}" class="btn btn-outline-warning">O izdelku</a>
+            </div>
+          </div>
+          </div>
+          {{/if_eq}}
+    {{/each}}
+</div>

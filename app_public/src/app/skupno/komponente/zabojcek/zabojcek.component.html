@@ -1,0 +1,50 @@
+<script src="zabojcek.component.ts"></script>
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-body">
+<!--<h4 class="card-title text-center">Pozdravljeni,{{zaboj.ime}} {{zaboj.priimek}}!</h4>-->
+      <h4 class="card-title text-center">Pozdravljeni, {{vrniPodatkeKupca()}}!</h4>
+      <p *ngIf="!jePrijavljen()">Za nadaljevanje se je potrebno <a routerLink="/profil"> prijaviti.</a>
+    </p>
+  </div>
+</div>
+
+<div *ngIf="jePrijavljen()" class="card-group">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title text-center">Vaš Zabojček</h4>
+        <h5>Seznam izdelkov: {{vrniZabojcekKupca()}}</h5><br>
+
+      <ul *ngFor ="let izdelek of zaboj.izdelkiVZabojcku">
+         <li>
+            <p>{{izdelek.ime}}</p>
+            <p>Količina: {{izdelek.kolicina}} Cena: {{izdelek.cena}}</p>
+          </li>
+        </ul>
+        <br>
+        <a routerLink="/kategorije" class="b-right btn btn-warning text-success">Nazaj v trgovino</a>
+        <!--<button type="submit" action="/zabojcek/{{_id}" class="btn btn-outline-success text-success">Izbriši vsebino zabojčka</button>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title text-center">Za plačilo</h4>
+        <p>Skupna cena: {{zaboj.cena}}</p>
+        <p>Poštnina: {{zaboj.postnina}}</p>
+
+        <h4 class="card-title text-center">Dostava</h4>
+        <p>Dostavo vašega zabojčka na dom lahko pričakujete od:</p>
+        <p>{{zaboj.datumDostave}}</p>
+        <a routerLink="/zabojcek/nakup/{{vrniPodatkeKupca()}}" class="b-right btn btn-warning text-success">Nadaljujte s plačilom</a>
+
+<!--        <a routerLink="/zabojcek/nakup/{{zaboj._id}}" class="b-right btn btn-warning text-success">Nadaljujte s plačilom</a>-->
+      </div>
+
+    </div>
+    <br>
+  </div>
+</div>

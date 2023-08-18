@@ -1,0 +1,47 @@
+
+<nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Domov</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kategorije</li>
+      </ol>
+    </nav>
+
+<div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="text-muted card-title"><b>Sodelujoče kmetije</b></h5>
+          </div>
+        </div>
+</div>
+
+<div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="text-muted card-title"><b>Zemljevid kmetij</b></h5>
+
+            
+            <div id="googleMap" style="width:100%; height:100%;">
+              <iframe src="https://maps.google.com/maps?q=Kmetija Funtek&z=15&output=embed"></iframe>
+              <!--<script src="../javascript/skripte.js"></script>-->
+            </div>
+ 
+              </div>
+        
+        
+        
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="text-muted card-title"><b>Seznam kmetij</b></h5>
+            <p>Izberite kmetijo za prikaz na zemljevidu</p>
+            <ul class="list-group">
+                 {{#each kmetije as |kmetije|}}
+                 <li>
+                     <p><a href="#">{{kmetije.naziv}}</a></p>
+                 </li> 
+                 {{/each}}
+            </ul>          
+          </div>
+        </div>
+        
+      </div>

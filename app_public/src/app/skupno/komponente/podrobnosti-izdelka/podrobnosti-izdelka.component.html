@@ -1,0 +1,55 @@
+<nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="">Domov</a></li>
+    <li class="breadcrumb-item"><a routerLink="/kategorije">Kategorije</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{izdelek.kategorija}}</li>
+  </ol>
+</nav>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <div class="text-center">
+        <h4><strong>{{izdelek.naziv}}</strong></h4>
+        <img src="{{izdelek.imgSrc}}" class="card-img-top" alt ="Izdelek">
+<!--        <img src="./assets/images/zelenjavicamini.png" class="card-img-top">-->
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+
+      <p>Na voljo na kmetijah:</p>
+      <ul>
+        <div *ngFor="let zaloga of izdelek.zaloga">
+          <div *ngIf="zaloga.kolicina !== '0'">
+          <li>
+            <h5><strong>{{zaloga.nazivKmetije}}</strong></h5>
+            <p *ngIf="jePrijavljen()">Cena: {{zaloga.cena}} eur/kg</p>
+            <p *ngIf="!jePrijavljen()">Cena: <strong>za ogled cen, se je potrebno <a routerLink="/profil">prijaviti</a></strong>.</p>
+            <p>Na voljo: {{zaloga.kolicina}} kg </p>
+            <a class="b-left btn btn-warning text-success" *ngIf="jePrijavljen()" routerLink="#">+ Dodaj v zabojček</a>
+            <hr>
+<!--          <p>{{{statuszaloge zaloga.kolicina}}}</p>-->
+<!--          <p>Cena: {{cena}} eur/kg</p>-->
+        </li>
+          </div>
+          <div *ngIf="zaloga.kolicina === '0'">
+            <li>
+              <h5><strong>{{zaloga.nazivKmetije}}</strong></h5>
+              <p>Cena: {{zaloga.cena}} eur/kg</p>
+
+              <p>Na voljo: {{zaloga.kolicina}} kg </p>
+              <button class="b-left btn btn-warning text-success" disabled="disabled" (click)="dodajIzdelek()">+ Dodaj v zabojček</button>
+              <hr>
+
+
+            </li>
+          </div>
+        </div>
+
+      </ul>
+      <br>
+    </div>
+  </div>
+</div>

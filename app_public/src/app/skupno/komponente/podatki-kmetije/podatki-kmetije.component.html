@@ -1,0 +1,66 @@
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+<!--      <h5 class="card-title" style="color: orange;"><b>Podatki o kmetiji</b></h5>-->
+<!--      <p><b>Ime lastnika:</b> {{prodajalec.ime}}</p>-->
+<!--      <p><b>Priimek lastnika:</b> {{prodajalec.priimek}}</p>-->
+<!--      <p><b>Ime kmetije:</b> {{prodajalec.imeKmetije}}</p>-->
+<!--      <p><b>Naslov:</b> {{prodajalec.naslovKmetije}}</p>-->
+<!--      <p><b>Kraj:</b> {{prodajalec.krajKmetije}}</p>-->
+<!--      <p><b>Pošta:</b> {{prodajalec.postaKmetije}}</p>-->
+<!--      <p><b>Email:</b> {{prodajalec.email}}</p>-->
+<!--      <p><b>Telefon:</b> {{prodajalec.telefon}}</p>-->
+<!--      <br>-->
+
+      <h6><strong>Uredi podatke</strong></h6>
+      <form (ngSubmit)="urediIzbranoKmetijo()">
+        <div class="form-group">
+          <label>Ime</label>
+          <input [(ngModel)]="urediPodatke.ime" type="name" name="ime" class="form-control" id="ime" aria-describedby="emailHelp" placeholder="vnesite ime"/>
+        </div>
+        <div class="form-group">
+          <label >Priimek</label>
+          <input [(ngModel)]="urediPodatke.priimek"  type="surname" name="priimek" class="form-control" id="priimek" aria-describedby="emailHelp" placeholder="vnesite priimek" />
+        </div>
+        <div class="form-group">
+          <label >Ime kmetije</label>
+          <input [(ngModel)]="urediPodatke.imeKmetije"  type="name" name="imeKmetije" class="form-control" id="imeKmetije" aria-describedby="emailHelp" placeholder="vnesite ime kmetije" />
+        </div>
+        <div class="form-group">
+          <label >Naslov kmetije</label>
+          <input [(ngModel)]="urediPodatke.naslovKmetije"  type="name" name="naslovKmetije" class="form-control" id="naslovKmetije" aria-describedby="emailHelp" placeholder="vnesite naslov kmetije" />
+        </div>
+        <div class="form-group">
+          <label >Kraj kmetije</label>
+          <input [(ngModel)]="urediPodatke.krajKmetije"  type="name" name="krajKmetije" class="form-control" id="krajKmetije" aria-describedby="emailHelp" placeholder="vnesite kraj kmetije" />
+        </div>
+        <div class="form-group">
+          <label >Pošta kmetije</label>
+          <input [(ngModel)]="urediPodatke.postaKmetije"  type="name" name="postaKmetije" class="form-control" id="postaKmetije" aria-describedby="emailHelp" placeholder="vnesite posto kmetije" />
+        </div>
+        <div class="form-group">
+          <label >Email kmetije</label>
+          <input [(ngModel)]="urediPodatke.email"  type="name" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="vnesite email kmetije" />
+        </div>
+        <div class="form-group">
+          <label >Telefon kmetije</label>
+          <input [(ngModel)]="urediPodatke.telefon"  type="name" name="telefon" class="form-control" id="telefon" aria-describedby="emailHelp" placeholder="vnesite telefon kmetije" />
+        </div>
+      <br>
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-success text-success">Shrani podatke</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <a href="javascript:history.back()" class="btn btn-outline-warning">Nazaj</a>
+    </div>
+  </div>
+</div>

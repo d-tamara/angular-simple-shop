@@ -1,0 +1,24 @@
+
+  <nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Domov</a></li>
+          <li class="breadcrumb-item"><a href="/kategorije">Kategorije</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sadje</li>
+        </ol>
+      </nav>
+      
+<div class="card-group">
+    {{#each sadje as |sadje|}}
+    {{#if_eq sadje.kategorija 'Sadje'}}
+        <div class="card">
+            <img class="card-img-top" src={{sadje.imgSrc}}>
+            <div class="card-body">
+              <div class="text-center">
+                <h5 class="card-title">{{sadje.naziv}}</h5>
+                  <a href="/sadje/{{sadje._id}}" class="btn btn-outline-warning">O izdelku</a>
+              </div>
+            </div>
+        </div>
+        {{/if_eq}}
+    {{/each}}
+</div>

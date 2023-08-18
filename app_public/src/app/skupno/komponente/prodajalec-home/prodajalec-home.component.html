@@ -1,0 +1,60 @@
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h5>Pozdravljeni, {{vrniPodatkeProdajalca()}}!</h5>
+      <p>Preglejte in uredite podatke o vaši kmetiji <strong>{{prodajalec.imeKmetije}}</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h6>DODAJ NOV IZDELEK</h6>
+      <a routerLink="/prodajalecHome/{{prodajalec._id}}/newItem"class="btn btn-outline-warning"> + Dodaj nov izdelek</a>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h6>UREJANJE IZDELKOV</h6>
+    </div>
+  </div>
+</div>
+
+<div class= "card-group">
+  <div class="card col-sm-3">
+    <div class="card-body" *ngFor="let izdelek of prodajalec.izdelki">
+        <!--<img src="{{izdelek.slika}}" class="card-img-top" alt="...">-->
+        <h5 class="card-title"><strong>{{izdelek.kategorija}}</strong></h5>
+          <h5 class="card-title">{{izdelek.ime}}</h5>
+          <p>Cena: {{izdelek.cena}}</p>
+          <p>Na voljo: {{izdelek.kolicina}}</p>
+          <a routerLink="/prodajalecHome/{{prodajalec._id}}" class="btn btn-outline-warning">Uredi ali izbriši</a>
+<!--          <button (click)="izbrisiIzdelek()" type="button" class="btn btn-outline-warning"><span class="fas fa-eraser"></span>&nbsp;Izbriši</button>-->
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h6>VAŠA NAROČILA</h6>
+      <a routerLink="/prodajalecHome/{{prodajalec._id}}/prodajalecOrders" class="btn btn-outline-warning">Poglej naročila</a></div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h6>UREJANJE PODATKOV</h6>
+      <p><strong>Osebni podatki:</strong> {{prodajalec.ime}} {{prodajalec.priimek}}</p>
+      <p><strong>Ime kmetije:</strong> {{prodajalec.imeKmetije}}, področje prodaje {{prodajalec.podrocjeProdaje}}</p>
+      <p><strong>Naslov kmetije:</strong> {{prodajalec.naslovKmetije}}, {{prodajalec.krajKmetije}}, {{prodajalec.postaKmetije}}</p>
+      <p><strong>Kontakt:</strong> {{prodajalec.telefon}}, {{prodajalec.email}}</p>
+      <a routerLink="/prodajalecHome/{{prodajalec._id}}/podatkiKmetije" class="btn btn-outline-warning">Uredi podatke o kmetiji</a>
+    </div>
+  </div>
+</div>

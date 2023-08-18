@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{title}}</title>
+    <link href='/stylesheets/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+     <link rel="stylesheet" href="/stylesheets/all.min.css">
+    
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" id='mainNav'>
+        <div class="container">
+
+          <a class="navbar-brand" href="/">
+                <img src="../images/buylocal-logo4.png" height="95" alt="BuyLocal">
+          </a>
+
+
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              
+
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Domov
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/kategorije">Nakupuj</a>
+                
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/prijavaProdajalec">Prodajaj</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/profil">Profil</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/zabojcek/{{_id}}"><img src="../images/crate01.png" height="30px" alt="BUYLOCAL"></a>
+              </li>
+
+{{!--              <li class="nav-item">--}}
+{{!--                <div class="card col-md-12">--}}
+{{!--            <div class="card-body">--}}
+{{!--          <div class="dropdown">--}}
+{{!--            <button onclick="myFunction()" class="dropbtn">Iskanje</button>--}}
+{{!--            <div id="myDropdown" class="dropdown-content">--}}
+{{!--              <input type="text" placeholder="Išči.." id="myInput" onkeyup="filterFunction()">--}}
+{{!--              <a href="/kategorije">Kmetije</a>--}}
+{{!--              <a href="/zelenjava">Zelenjava</a>--}}
+{{!--              <a href="/sadje">Sadje</a>--}}
+{{!--              <a href="/pijaca">Pijača</a>--}}
+{{!--              <a href="/ostalipridelki">Ostali pridelki</a>--}}
+{{!--          </div>--}}
+{{!--        </div>--}}
+{{!--        </div>--}}
+{{!--        </div>--}}
+        
+
+{{!--<script>--}}
+{{!--/* When the user clicks on the button,--}}
+{{!--toggle between hiding and showing the dropdown content */--}}
+{{!--function myFunction() {--}}
+{{!--  document.getElementById("myDropdown").classList.toggle("show");--}}
+{{!--}--}}
+
+{{!--function filterFunction() {--}}
+{{!--  var input, filter, ul, li, a, i;--}}
+{{!--  input = document.getElementById("myInput");--}}
+{{!--  filter = input.value.toUpperCase();--}}
+{{!--  div = document.getElementById("myDropdown");--}}
+{{!--  a = div.getElementsByTagName("a");--}}
+{{!--  for (i = 0; i < a.length; i++) {--}}
+{{!--    txtValue = a[i].textContent || a[i].innerText;--}}
+{{!--    if (txtValue.toUpperCase().indexOf(filter) > -1) {--}}
+{{!--      a[i].style.display = "";--}}
+{{!--    } else {--}}
+{{!--      a[i].style.display = "none";--}}
+{{!--    }--}}
+{{!--  }--}}
+{{!--}--}}
+{{!--</script>--}}
+                {{!--<div class="searchbar-nav ml-auto">--}}
+                {{!--  <form class="search">--}}
+                {{!--    <input type="text" placeholder="Brskajte med izdelki ...">--}}
+                {{!--    <button type="submit"><i class="fa fa-search white-text fa-lg"></i></button>--}}
+                {{!--  </form>--}}
+                  
+                {{!--  </div>--}}
+  
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div class="container">
+      {{{body}}}
+      <footer class="page-footer font-small">
+        
+        <div class="footer-copyright text-center py-3">
+          <div class="row">
+            
+            <div class="col-md-12 py-2">
+              
+              <div class="mb-5 flex-center socials">
+                
+                <a class="fb-ic icon">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                
+                <a class="ins-ic icon">
+                  <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                
+                <a class="pin-ic icon">
+                  <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                </a>
+              </div>
+              
+            </div>
+          </div>
+          
+          <img src="../images/buylocal-logo2-01.png" height="120px">
+          <br>
+          © 2020
+          <a href="/"> BuyLocal d.o.o.</a>
+        </div>
+      </footer>
+    </div>
+    <script src="/javascripts/jquery-3.5.1.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,22 @@
+ <nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="">Domov</a></li>
+    <li class="breadcrumb-item"><a routerLink="/kategorije">Kategorije</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Ostali pridelki</li>
+  </ol>
+</nav>
+
+<div class="card-group">
+  <div *ngFor="let ostalipridelki of ostalipridelki">
+    <div *ngIf="ostalipridelki.kategorija === 'Ostali'">
+      <div class="card">
+        <img class="card-img-top" src={{ostalipridelki.imgSrc}} alt ="Ostali pridelki">
+        <div class="card-body">
+          <div class="text-center">
+            <h5 class="card-title">{{ostalipridelki.naziv}}</h5>
+            <a href="/kategorije/{{ostalipridelki._id}}" class="btn btn-outline-warning">O izdelku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

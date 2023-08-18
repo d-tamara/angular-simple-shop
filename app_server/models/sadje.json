@@ -1,0 +1,76 @@
+[{
+  "id": "101",
+  "naziv": "Jabolko",
+  "imgSrc": "../images/apple.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "2",
+      "kolicina": "0"
+    }
+  ]
+},{
+  "id": "102",
+  "naziv": "Hruška",
+  "imgSrc": "../images/pear.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "0"
+    }
+  ]
+},{
+  "id": "103",
+  "naziv": "Banana",
+  "imgSrc": "../images/banana.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "0"
+    }
+  ]
+},{
+  "id": "104",
+  "naziv": "Kivi",
+  "imgSrc": "../images/kiwi.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "23"
+    }
+  ]
+},{
+  "id": "105",
+  "naziv": "Grozdje",
+  "imgSrc": "../images/grapes.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "0"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "23"
+    }
+  ]
+}]

@@ -1,0 +1,35 @@
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <br>
+      <h5 class="card-title" style="text-align:center;">PRIJAVA</h5>
+      <p style="text-align:center;">obstoječega uporabnika.</p>
+      <br>
+      <p style="text-align:center;">Še nimate računa?</p>
+      <a routerLink="/profil/registracijaKupca"><p style="text-align:center;">Registrirajte se.</p></a>
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <form (submit)="posiljanjePodatkov()">
+<!--        <div *ngIf="obrazecNapaka" class="alert alert-danger" role="alert">-->
+<!--          {{ obrazecNapaka }}-->
+<!--        </div>-->
+        <div role="alert" *ngIf="napakaNaObrazcu" class="alert alert-danger">{{ napakaNaObrazcu }}</div>
+        <div class="form-group">
+          <label >Email naslov</label>
+          <input [(ngModel)]="novKupec.email" [disabled]="!jePovezava()" name="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="vnesite email naslov">
+        </div>
+        <div class="form-group">
+          <label >Geslo</label>
+          <input [(ngModel)]="novKupec.geslo" [disabled]="!jePovezava()" name="geslo" type="password" class="form-control" placeholder="vnesite geslo" minlength="8">
+        </div>
+        <br>
+        <div class="text-center">
+          <button type ="submit" id="oddaja" class="btn btn-outline-success text-success" [disabled]="!jePovezava()">Prijava</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

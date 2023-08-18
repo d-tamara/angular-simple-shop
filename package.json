@@ -1,0 +1,49 @@
+{
+  "name": "buylocal",
+  "version": "1.2.3",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha test --bail --reporter mochawesome --reporter-options autoOpen=true,reportDir=test/porocilo,reportFilename=porocilo,json=false"
+  },
+  "engines": {
+    "node": ">=14.10.1",
+    "npm": ">=6.14.8"
+  },
+  "dependencies": {
+    "@angular/common": "^11.0.5",
+    "@angular/core": "^11.0.5",
+    "@ng-bootstrap/ng-bootstrap": "^8.0.0",
+    "axios": "^0.21.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "*",
+    "debug": "*",
+    "dotenv": "^8.2.0",
+    "email-validator": "^2.0.4",
+    "express": "*",
+    "express-jwt": "^6.0.0",
+    "express-jwt-permissions": "^1.3.3",
+    "express-validator": "^6.7.0",
+    "handlebars": "^4.7.6",
+    "hbs": "*",
+    "helmet": "^4.2.0",
+    "http-errors": "*",
+    "jsonwebtoken": "^8.5.1",
+    "leaflet": "^1.7.1",
+    "mongoose": "^5.11.8",
+    "morgan": "*",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "@angular/cli": "^11.0.5",
+    "chai": "^4.2.0",
+    "chromedriver": "^87.0.4",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "selenium-webdriver": "^4.0.0-alpha.8"
+  }
+}

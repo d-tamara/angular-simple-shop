@@ -1,0 +1,32 @@
+[{
+    "id": "301",
+    "ime": "Cvetlični med",
+    "slika": "../images/honey-jar.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "302",
+    "ime": "Jagodna marmelada",
+    "slika": "../images/jam.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "303",
+    "ime": "Jajca",
+    "slika": "../images/eggs.png",
+    "cena": "1 eur/kg",
+    "navoljo": "0"
+  },{
+
+    "id": "304",
+    "ime": "Jogurt",
+    "slika":"../images/frozen-yogurt.png",
+    "cena": "1 eur/kg",
+    "navoljo": "100"
+  }, {
+    "id": "305",
+    "ime": "Mleko",
+    "slika": "../images/milk.png",
+    "cena": "1",
+    "navoljo": "50"
+}]

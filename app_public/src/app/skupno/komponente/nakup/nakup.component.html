@@ -1,0 +1,186 @@
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title text-center">Pregled zabojčka</h4>
+      <h5>Številka vašega zabojčka: <strong>#{{zaboj._id}}</strong></h5>
+      <h5>Poštnina: <strong>{{zaboj.postnina}} eur</strong></h5>
+      <h5>Za plačilo: <strong>{{zaboj.cena}}</strong></h5>
+      <br>
+      <h5>Predviden datum dostave: <strong>{{zaboj.datumDostave}}</strong></h5>
+      <a routerLink="/kategorije" class="b-right btn btn-warning text-success">Nazaj v trgovino</a>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Izberite način plačila:</h3>
+
+    <div class="form-group" id="naciniPlacila">
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="nacinPlacila" id="placiloKartica" value="option1">
+        <label class="form-check-label">Plačilo s kartico</label>
+      </div>
+      <!--<div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="nacinPlacila" id="placiloGotovina" value="option2">
+        <label class="form-check-label">Plačilo z gotovino (ob prevzemu)</label>
+      </div>-->
+    </div>
+
+    <h3>Vnesite potrebne podatke za dostavo:</h3>
+    <form>
+      <div class="form-group">
+        <div class="row">
+          <div class="col">
+            <label>Ime</label>
+            <input type="text" class="form-control" placeholder="vnesite ime" required>
+          </div>
+
+          <div class="form-group">
+            <div class="col">
+              <label>Priimek</label>
+              <input type="text" class="form-control" placeholder="vnesite priimek" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col">
+            <label>Poštna številka</label>
+            <input type="text" class="form-control" id="vnesenaPostnaStevilka" placeholder="vnesite poštno številko (npr. 1000)" required>
+          </div>
+          <div class="col">
+            <label>Mesto</label>
+            <input type="text" class="form-control" placeholder="vnesite ime mesta" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col">
+          <label>Naslov</label>
+          <input type="text" class="form-control" placeholder="vnesite željen naslov dostave in hišno številko" required>
+        </div>
+      </div>
+    </form>
+
+    <!-- TO DO
+    <script>
+    $(document).ready(function() {
+      $('#nacinPlacila').click(function() {
+           if($('#placiloKartica').is(':checked')) { alert("it's checked"); }
+      });
+    });
+
+
+
+
+      //$("#placiloKartica").click(function() {
+      /*if($("#placiloKartica").prop("checked")) {
+
+      };
+    });*/
+    /*if($("#placiloKartica").prop("checked")) {
+      $("karticaForm").toggle();
+    }*/
+
+    /*var kartica = document.querySelector("#placiloKartica");
+    kartica.addEventListener("click", function() {
+      $("karticaForm").toggle();
+    });*/
+
+    /*$("#placiloKartica").click(function() {
+
+    });*/
+    </script> -->
+
+    <form id="karticaForm">
+      <div class="form-group">
+
+        <div class="col">
+          <label>Številka kartice</label>
+          <input type="text" class="form-control" id="vnesenaStevilkaKartice" placeholder="vnesite številko kartice">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col">
+          <label>Veljavnost kartice</label>
+          <input type="text" class="form-control" id="vnesenRokVeljavnosti" placeholder="vnesite rok veljavnosti kartice">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col">
+          <label>Imetnik kartice</label>
+          <input type="text" class="form-control" placeholder="vnesite imetnika kartice">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col">
+          <label>CVV</label>
+          <input type="text" class="form-control" id="vnesenCVV" placeholder="vnesite CVV" warn="Vnesite veljaven CVV!">
+          <p id="opozorilo"></p>
+        </div>
+      </div>
+      <br>
+    </form>
+    <div class="container">
+      <div class="co-md-12">
+        <h5>Skupna cena: <!--{{zabojcek.cena}}--> eur</h5> <!-- tuki sm meu <p> pr h5 in button -->
+
+        <button onclick="validacijaPodatkov()" (click)="open(mymodal)" type="submit" class="b-right btn btn-warning text-success">Oddaj naročilo</button>
+
+        <ng-template #mymodal let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Potrditev naročila</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 class="text-reset">Ste prepričani v zaključek naročila in plačilo?</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark pull-left" aria-label="Close" (click)="modal.dismiss('Cross click')">Prekliči</button>
+            <a routerLink=""><button type="button" class="btn btn-outline-success pull-right" (click)="modal.close('Save click')">Oddaj naročilo</button></a>
+          </div>
+        </ng-template>
+        <script src="/app_public/src/assets/javascripts/skripte.js"></script>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--<div class="container">-->
+<!--  <div class="modal fade" id="potrdiNaročilo" tabindex="-1" role="dialog" aria-labelledby="potrditevNaročila" aria-hidden="true">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--      <div class="modal-content">-->
+<!--        <div class="modal-header">-->
+<!--          <h4 class="modal-title" id="želja">Potrditev</h4>-->
+<!--          <button type="button" class="close" data-dismiss="modal"-->
+<!--                  aria-label="Close">-->
+<!--            <span aria-hidden="true">&times;</span>-->
+<!--          </button>-->
+<!--        </div>-->
+
+<!--        <div class="modal-body">-->
+<!--          <p style="font-size: 15pt;">Ste prepričani v zaključek nakupa in plačilo?</p>-->
+<!--          <p class="text-secondary">-->
+<!--            Ob preklicu naročila se podatki ne izbrišejo.-->
+<!--          </p>-->
+<!--        </div>-->
+
+<!--        <div class="modal-footer">-->
+<!--          <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Prekliči</button>-->
+<!--          <a routerLink=""><button type="submit" class="btn btn-success" id="oddajNarocilo" onclick="validacijaPodatkov()">Oddaj naročilo</button></a>-->
+<!--          <script src="/assets/javascripts/skripte.js"></script>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+

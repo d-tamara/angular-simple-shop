@@ -1,0 +1,27 @@
+
+      
+      
+  
+ <nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Domov</a></li>
+          <li class="breadcrumb-item"><a href="/kategorije">Kategorije</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pijače</li>
+        </ol>
+      </nav>
+      
+<div class="card-group">
+  {{#each pijaca as |pijaca|}}
+  {{#if_eq pijaca.kategorija 'Pijača'}}
+        <div class="card">
+          <img class="card-img-top" src={{pijaca.imgSrc}}>
+          <div class="card-body">
+            <div class="text-center">
+              <h5 class="card-title">{{pijaca.naziv}}</h5>
+              <a href="/pijaca/{{pijaca._id}}" class="btn btn-outline-warning">O izdelku</a>
+            </div>
+          </div>
+          </div>
+          {{/if_eq}}
+    {{/each}}
+      </div>

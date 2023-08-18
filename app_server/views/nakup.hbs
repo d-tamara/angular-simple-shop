@@ -1,0 +1,251 @@
+<div class="card-group">
+          <div class="card">
+                <div class="card-body">
+                <h4 class="card-title"><center>Pregled zabojčka</center></h4>
+                <h5>Številka vašega zabojčka: <strong>#{{zabojcek._id}}</strong></h5>
+                <h5>Poštnina: <strong>{{zabojcek.postnina}} eur</strong></h5>
+                <h5>Za plačilo: <strong>{{zabojcek.cena}} eur</strong></h5>
+                <br>
+                <h5>Predviden datum dostave: <strong>{{zabojcek.datumDostave}}</strong></h5>
+                <a href="/kategorije" class="b-right btn btn-warning text-success">Nazaj v trgovino</a>
+                </div>
+          </div>
+          </div>
+          <div class="card">
+	          <div class="card-body">
+	            <h3 class="card-title">Izberite način plačila:</h3>
+
+	            <div class="form-group" id="naciniPlacila">
+
+		            <div class="form-check form-check-inline">
+	  					<input class="form-check-input" type="radio" name="nacinPlacila" id="placiloKartica" value="option1">
+	  					<label class="form-check-label" for="inlineCheckbox1">Plačilo s kartico</label>
+					</div>
+					<div class="form-check form-check-inline">
+	  					<input class="form-check-input" type="radio" name="nacinPlacila" id="placiloGotovina" value="option2">
+	  					<label class="form-check-label" for="inlineCheckbox2">Plačilo z gotovino (ob prevzemu)</label>
+					</div>
+				</div>
+
+				<h3>Vnesite potrebne podatke za dostavo:</h3>
+					<form>
+					  	<div class="form-group">
+					  		<div class="row">
+							    <div class="col">
+							      <label for="exampleInputName">Ime</label>
+							      <input type="text" class="form-control" placeholder="vnesite ime" required>
+							    </div>
+
+							    <div class="form-group">
+								    <div class="col">
+								    	<label for="exampleInputSurname">Priimek</label>
+								      <input type="text" class="form-control" placeholder="vnesite priimek" required>
+								    </div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="row">
+							    <div class="col">
+							    	<label for="exampleInputPostalCode">Poštna številka</label>
+							      <input type="text" class="form-control" id="vnesenaPostnaStevilka" placeholder="vnesite poštno številko (npr. 1000)" required>
+							    </div>
+							    <div class="col">
+							    	<label for="exampleInputCity">Mesto</label>
+							      <input type="text" class="form-control" placeholder="vnesite ime mesta" required>
+							    </div>
+							</div>
+						</div>
+
+						<div class="form-group">
+						    <div class="col">
+						      <label for="exampleInputAddress">Naslov</label>
+						      <input type="text" class="form-control" placeholder="vnesite željen naslov dostave in hišno številko" required>
+						    </div>
+						</div>
+					</form>
+					
+					<!-- TO DO
+					<script>
+					$(document).ready(function() {
+						$('#nacinPlacila').click(function() {
+   							if($('#placiloKartica').is(':checked')) { alert("it's checked"); }
+						});
+					});	
+						
+						
+						
+						
+						//$("#placiloKartica").click(function() {
+						/*if($("#placiloKartica").prop("checked")) {
+							
+						};
+					});*/
+					/*if($("#placiloKartica").prop("checked")) {
+						$("karticaForm").toggle();
+					}*/
+					
+					/*var kartica = document.querySelector("#placiloKartica");
+					kartica.addEventListener("click", function() {
+						$("karticaForm").toggle();
+					});*/
+					
+					/*$("#placiloKartica").click(function() {
+							
+					});*/
+					</script> -->
+					
+					<form id="karticaForm">
+					  <div class="form-group">
+
+					    <div class="col">
+					      <label for="exampleCardNumber">Številka kartice</label>	
+					      <input type="text" class="form-control" id="vnesenaStevilkaKartice" placeholder="vnesite številko kartice">
+					    </div>
+					   </div>
+					   <div class="form-group">
+					    <div class="col">
+					    	<label for="exampleExpirationDate">Veljavnost kartice</label>
+					      <input type="text" class="form-control" id="vnesenRokVeljavnosti" placeholder="vnesite rok veljavnosti kartice">
+					    </div>
+					   </div>
+					   <div class="form-group">
+					    	<div class="col">
+					    		<label for="exampleCardHolder">Imetnik kartice</label>
+					      		<input type="text" class="form-control" placeholder="vnesite imetnika kartice">
+					    	</div>
+					  	</div>
+					  	<div class="form-group">
+						    <div class="col">
+						    	<label for="exampleCVV">CVV</label>
+						        <input type="text" class="form-control" id="vnesenCVV" placeholder="vnesite CVV" warn="Vnesite veljaven CVV!">
+						       	<p id="opozorilo"></p>
+					    	</div>
+					    </div>
+					<br>
+					</form>
+					<div class="container">
+						<div class="co-md-12">
+							<p><h5>Skupna cena: {{zabojcek.cena}} eur</h5>
+						
+							<button type="submit" class="b-right btn btn-warning text-success" data-toggle="modal" data-target="#potrdiNaročilo">Oddaj naročilo</button></p>
+						</div>
+					</div>
+				
+				</div>
+	</div>
+</div>
+<!-- TO DO-->
+<div class="container">
+			<div class="modal fade" id="potrdiNaročilo" tabindex="-1" role="dialog" aria-labelledby="potrditevNaročila" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="želja">Potrditev</h4>
+							<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+
+						<div class="modal-body">
+							<p style="font-size: 15pt;">Ste prepričani v zaključek nakupa in plačilo?</p>
+							<p class="text-secondary">
+								Ob preklicu naročila se podatki ne izbrišejo.
+							</p>
+						</div>
+
+						<div class="modal-footer">
+							<button type="button" class="btn btn-outline-warning" data-dismiss="modal">Prekliči</button>
+							<a href="/"><button type="submit" class="btn btn-success" id="oddajNarocilo" onclick="validacijaPodatkov()">Oddaj naročilo</button></a>
+							<script src="../javascripts/skripte.js"></script>
+							<!--<script>
+							
+								function validacijaPodatkov() {
+									var vsaPravilno = true;
+									var obveznoValidiranaPolja = document.querySelectorAll("#vnesenCVV, #vnesenaPostnaStevilka, #vnesenaStevilkaKartice, #vnesenRokVeljavnosti");
+										
+									for(var i = 0; i < obveznoValidiranaPolja.length; i++) {
+										var pravilnost = regexCheck(i);
+										if(pravilnost == false) {
+											//obveznoValidiranaPolja[i].value = "";
+											if(vsaPravilno) {
+												vsaPravilno = false;
+											}
+										}
+									}
+										
+										
+									if(vsaPravilno) {
+										alert("Naročilo oddano!");
+											window.location.href = "/";
+									} else { event.preventDefault(); }
+									
+										
+										//var warning = document.querySelector("opozorilo");
+										/*document.getElementById("vnesenCVV").addEventListener("focus", function(dogodek) {
+											var besedilo = dogodek.target.getAttribute("warn");
+											warning.textContent = besedilo;
+											
+										});
+										
+										document.getElementById("vnesenCVV").addEventListener("blur", function(dogodek) {
+											warning.textContent = "";
+											
+										});*/
+								}
+								
+								function regexCheck(indexPolja) {
+										if(indexPolja == 0) { //cvv
+											var val = document.getElementById("vnesenCVV").value;
+											var reg = /^\d{3}$/;
+											var veljavnost = reg.test(val);
+											if(!veljavnost) {
+												document.getElementById("vnesenCVV").value = "";
+												alert('Nepravilen vnos CVV!');
+											}
+											return veljavnost;
+										} else if(indexPolja == 1) {  //postnastevilka
+											var val = document.getElementById("vnesenaPostnaStevilka").value;
+											var reg = /^\d{4}$/;
+											var veljavnost = reg.test(val);
+											if(!veljavnost) {
+												document.getElementById("vnesenaPostnaStevilka").value = "";
+												alert('Nepravilen vnos poštne številke!');
+											}
+											return veljavnost;
+											
+										} else if(indexPolja == 2) {			//stevilka kartice
+											var val = document.getElementById("vnesenaStevilkaKartice").value;
+											var reg = /^\d{4} \d{4} \d{4} \d{4}$/;
+											var veljavnost = reg.test(val);
+											if(!veljavnost) {
+												document.getElementById("vnesenaStevilkaKartice").value = "";
+												alert('Nepravilen vnos št. kartice!');
+											}
+											return veljavnost;
+										} else if(indexPolja == 3) { 				//rok veljavnosti
+											var val = document.getElementById("vnesenRokVeljavnosti").value;
+											var reg = /^\d{2}\/\d{2}$/;
+											var veljavnost = reg.test(val);
+											if(!veljavnost) {
+												document.getElementById("vnesenRokVeljavnosti").value = "";
+												alert('Nepravilen vnos roka veljavnosti!');
+											}
+											return veljavnost;
+										}
+								}
+							</script>-->
+						</div>
+					</div>
+				</div>							
+			</div>
+		</div>
+		
+          
+          
+          
+          
+        </div>
+</div>

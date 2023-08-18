@@ -1,0 +1,76 @@
+[{  
+  
+  "naziv": "Paradižnik",
+  "imgSrc": "../images/001-tomato.png",
+  "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "3",
+            "kolicina": "0"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+},{
+  
+  "naziv": "Rdeča paprika",
+  "imgSrc": "../images/002-pepper.png",
+  "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+},{
+ 
+  "naziv": "Kumare",
+  "imgSrc": "../images/004-cucumber.png",
+  "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+}, {
+  
+  "naziv": "Čebula",
+  "imgSrc": "../images/005-onion.png",
+  "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+}, {
+  
+  "naziv": "Por",
+  "imgSrc": "../images/008-leek.png",
+  "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+}]

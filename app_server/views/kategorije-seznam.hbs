@@ -1,0 +1,296 @@
+<!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script> -->
+
+{{!--<app-seznam-kategorij></app-seznam-kategorij>--}}
+{{!--<script src="build/runtime.0e49e2b53282f40c8925.js"></script>--}}
+{{!--<script src="build/polyfills.8c151b8375e767ff858f.js"></script>--}}
+{{!--<script src="build/main.065a8b878cb0152b5742.js"></script>--}}
+   
+<nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Domov</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kategorije</li>
+      </ol>
+    </nav>
+
+<div class="card-group">
+        <div class="card">
+          <img src="../images/zelenjavicamini.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zelenjava</h5>
+            <a href="/zelenjava" class="btn btn-outline-warning">Preveri izdelke</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/fruits.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sadje</h5>
+            <a href="/sadje" class="btn btn-outline-warning">Preveri izdelke</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/alcohol.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pijača</h5>
+            <a href="/pijaca" class="btn btn-outline-warning">Preveri izdelke</a>
+          </div>
+        </div>
+        <div class="card">
+            <img src="../images/dairy-products.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ostali pridelki</h5>
+              <a href="/ostalipridelki" class="btn btn-outline-warning">Preveri izdelke</a>
+            </div>
+          </div>
+          
+      </div>
+      <br>
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style="color: orange;"><b>Sodelujoče kmetije</b></h5>
+          </div>
+        </div>
+        {{!--<div class="card">--}}
+        {{!--  <div class="card-body">--}}
+        {{!--    <div class="searchbar-nav ml-auto">--}}
+        {{!--      <form class="search">--}}
+        {{!--        <input type="text" placeholder="  Brskaj med kmetijami ...">--}}
+        {{!--        <button type="submit"><i class="fa fa-search white-text fa-lg"></i></button>--}}
+        {{!--      </form>--}}
+        {{!--      </div>--}}
+        {{!--  </div>--}}
+        {{!--</div>--}}
+      </div>
+
+      {{!--<div class="card-group">--}}
+      {{!--  <div class="card">--}}
+      {{!--    <div class="card-body">--}}
+      {{!--      <h5 class="card-title">Zemljevid kmetij</h5>--}}
+
+      {{!--      <div id="googleMap" style="width:100%;height:100%;">--}}
+      {{!--        <iframe src="https://maps.google.com/maps?q=Kmetija Funtek&z=15&output=embed"></iframe>--}}
+      {{!--      </div>--}}
+        
+      {{!--      </div>--}}
+      {{!--  </div>--}}
+        
+      {{!--  <div class="card">--}}
+      {{!--    <div class="card-body">--}}
+
+      {{!--      <ul class="list-group">--}}
+      {{!--        <li class="list-group-item">Kmetija 1, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--        <li class="list-group-item">Kmetija 2, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--        <li class="list-group-item">Kmetija 3, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--        <li class="list-group-item">Kmetija 4, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--        <li class="list-group-item">Kmetija 5, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--        <li class="list-group-item">Kmetija 6, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--        <li class="list-group-item">Kmetija 7, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--        <li class="list-group-item">Kmetija 8, Kraj<a href="#" class="b-right">Prikaži</a></li>--}}
+      {{!--      </ul>          --}}
+      {{!--    </div>--}}
+      {{!--  </div>--}}
+
+      {{!--</div>--}}
+
+{{!--      <div class="spacer"></div>--}}
+
+
+{{!--<div class="card-group">--}}
+{{!--    {{#each kategorije as |kategorija|}}--}}
+{{!--        <div class="card">--}}
+{{!--          <img class="card-img-top" src={{kategorija.imgSrc}}>--}}
+{{!--          <div class="card-body">--}}
+{{!--            <div class="text-center">--}}
+{{!--            <h5 class="card-title">{{kategorija.naziv}}</h5>--}}
+{{!--            <a href="{{kategorija.link}}">Preveri ponudbo</a>--}}
+{{!--            </div>--}}
+{{!--          </div>--}}
+{{!--        </div>--}}
+{{!--       {{/each}}--}}
+{{!--</div>--}}
+
+
+{{!--<div class="card-group">--}}
+{{!--  <div class="card">--}}
+{{!--    <script>--}}
+{{!--      var markerji = [];--}}
+{{!--      var mapa;--}}
+      
+{{!--      const FRI_LAT = 46.052076;--}}
+{{!--      const FRI_LNG = 14.466812;--}}
+
+{{!--      const FE_LAT = 46.0446209;--}}
+{{!--      const FE_LNG = 14.489393;--}}
+      
+{{!--      function pridobiKoordinateTocke(geometrija) {--}}
+{{!--        if (geometrija.tip == "Tocka")--}}
+{{!--            return [geometrija.koordinate[1], geometrija.koordinate[0]];--}}
+{{!--        if (geometrija.tip == "Poligon")--}}
+{{!--            return [geometrija.koordinate[0][0][1], geometrija.koordinate[0][0][0]];--}}
+{{!--        if (geometrija.tip == "MultiPoligon")--}}
+{{!--            return [geometrija.koordinate[0][0][0][1], geometrija.koordinate[0][0][0][0]];--}}
+{{!--        else--}}
+{{!--            throw new Error("Nepodprt format koordinate: " + JSON.stringify(geometrija));--}}
+{{!--      }--}}
+    
+{{!--      function preberiNiz(niz) {--}}
+{{!--        return niz ? niz : "";--}}
+{{!--      }--}}
+      
+{{!--      function pripraviMapo() {--}}
+        {{!--// Ustvarimo objekt mapa ter dodamo osnovne lastnosti mapi--}}
+{{!--        mapa = L.map('mapa_id', {--}}
+{{!--            center: L.latLng(FRI_LAT, FRI_LNG),--}}
+{{!--            zoom: 9--}}
+{{!--        });--}}
+
+        {{!--// Ustvarimo prikazni sloj mape--}}
+{{!--        var layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');--}}
+
+        {{!--// Prikazni sloj dodamo na mapo--}}
+{{!--        mapa.addLayer(layer);--}}
+
+        {{!--// Ročno dodamo fakulteto za računalništvo in informatiko na mapo--}}
+{{!--        var marker = L.marker([FRI_LAT, FRI_LNG]).addTo(mapa);--}}
+
+        {{!--// Izpišemo želeno sporočilo v oblaček--}}
+{{!--        marker.bindPopup("<div>Tukaj se nahaja FRI</div>").openPopup();--}}
+
+        {{!--// Podobno dodamo še faulteto za elektrotehniko na mapo--}}
+{{!--        var marker = L.marker([FE_LAT, FE_LNG]).addTo(mapa);--}}
+{{!--        marker.bindPopup("<div>Tukaj se nahaja FE</div>");--}}
+
+{{!--        markerji.push(marker);--}}
+{{!--      }--}}
+{{!--      function dodajStile() {--}}
+{{!--        var noga = document.getElementsByTagName("noga")[0];--}}
+{{!--        noga.style.position = "fixed";--}}
+{{!--        noga.style.bottom = 0;--}}
+{{!--    }--}}
+    
+{{!--    function naloziVsebino() {--}}
+
+        {{!--// Sinhrona zahteva--}}
+{{!--        var sinhronaZahteva = new XMLHttpRequest();--}}
+{{!--        sinhronaZahteva.open("GET", "/podatki", false);--}}
+{{!--        sinhronaZahteva.send(null);--}}
+
+{{!--        var jsonRezultati = JSON.parse(sinhronaZahteva.responseText);--}}
+{{!--        jsonRezultati.forEach(function (objekt) {--}}
+
+{{!--            function dodajpresledek(obj, obj2) {--}}
+{{!--                return obj.length > 0 && obj2.length > 0 ? " " : "";--}}
+{{!--            }--}}
+
+            {{!--// primer dodajanja elementa HR na osnovnih HTML element BODY.--}}
+{{!--            document.body.appendChild(document.createElement("hr"));--}}
+{{!--        });--}}
+{{!--    }--}}
+
+{{!--    pripraviMapo();--}}
+{{!--    dodajStile();--}}
+{{!--    naloziVsebino();--}}
+      
+      
+{{!--    </script>--}}
+{{!--</div>--}}
+{{!--</div>--}}
+
+     <!-- <div class="card-group">
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="text-muted card-title"><b>Sodelujoče kmetije</b></h5>
+            <h5 class="card-title" style="color: orange;"><b>Sodelujoče kmetije</b></h5>
+          </div>
+        </div>-->
+
+
+      {{!--  <div class="card">--}}
+      {{!--    <div class="card-body">--}}
+      {{!--      <div class="searchbar-nav ml-auto">--}}
+      {{!--        <form class="search">--}}
+      {{!--          <input type="text" placeholder="  Brskaj med kmetijami ...">--}}
+      {{!--          <button type="submit"><i class="fa fa-search white-text fa-lg"></i></button>--}}
+      {{!--        </form>--}}
+      {{!--        </div>--}}
+      {{!--    </div>--}}
+      {{!--  </div>--}}
+      {{!--</div>--}}
+      
+      <div class="card">
+          <div class="card-body">
+            {{#each kmetije as |kmetija|}}
+            
+            <h6 class="text-muted card-title"><b>{{kmetija.imeKmetije}},</b> {{kmetija.krajKmetije}}</h6>
+            <ul>
+              <li><p>{{kmetija.podrocjeProdaje}}</p></li>
+            </ul>
+            {{/each}}
+            <div style="width: 100%">
+              <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1pBEJhKLDO97Pxx1t_of5OLaB7YSPY4_x" width="1000" height="500"></iframe>
+            </div>
+            
+
+            
+          </div>
+              
+      </div> 
+
+      
+      
+      {{!--      <div class="container-fluid">--}}
+      {{!--  <div class="row mx-lg-n5">--}}
+      {{!--    <div class="col-lg-6 col-md-6 col-xs-6 thumb">--}}
+      {{!--      <div style="width: 100%">--}}
+      {{!--        <iframe src="https://maps.google.com/maps?q=Kmetija Funtek&z=15&output=embed"></iframe>--}}
+      {{!--      </div>--}}
+      {{!--    </div>--}}
+      {{!--    <div class="col-lg-6 col-md-6 col-xs-6 thumb">--}}
+      {{!--      <script src="https://apps.elfsight.com/platform.js" defer></script>--}}
+      {{!--      <div style="transform: scale(1.565)">--}}
+              
+      {{!--      </div>--}}
+      {{!--  </div>--}}
+      {{!--</div>--}}
+      
+      
+
+        {{!--<div class="card-group">--}}
+        {{!--<div class="card">--}}
+        {{!--  <div class="card-body">--}}
+        {{!--    <h5 class="text-muted card-title"><b>Zemljevid kmetij</b></h5>--}}
+
+            
+        {{!--    <div id="googleMap" style="width:100%; height:100%;">--}}
+        {{!--      <iframe src="https://maps.google.com/maps?q=Kmetija Funtek&z=15&output=embed"></iframe>--}}
+        {{!--      <!--<script src="../javascript/skripte.js"></script>-->--}}
+        {{!--    </div>--}}
+ 
+        {{!--      </div>--}}
+        
+        
+        
+      {{!--  </div>--}}
+      {{!--  <div class="card">--}}
+      {{!--    <div class="card-body">--}}
+      {{!--      <h5 class="text-muted card-title"><b>Seznam kmetij</b></h5>--}}
+      {{!--      <p>Izberite kmetijo za prikaz na zemljevidu</p>--}}
+      {{!--      <ul class="list-group">--}}
+      {{!--           {{#each kmetije as |kmetije|}}--}}
+      {{!--           <li>--}}
+      {{!--               <p><a href="#">{{kmetije.naziv}}</a></p>--}}
+      {{!--           </li> --}}
+      {{!--           {{/each}}--}}
+      {{!--      </ul>          --}}
+      {{!--    </div>--}}
+      {{!--  </div>--}}
+        
+      {{!--</div>--}}

@@ -1,0 +1,31 @@
+[{
+    "id": "101",
+    "ime": "Jabolko",
+    "slika": "../images/apple.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "102",
+    "ime": "Hruška",
+    "slika": "../images/pear.png,
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "103",
+    "ime": "Banana",
+    "slika": "../images/banana.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "104",
+    "ime": "Kivi",
+    "slika": "../images/kiwi.png",
+    "cena": "1 eur/kg",
+    "navoljo": "100"
+  }, {
+    "id": "105",
+    "ime": "Grozdje",
+    "slika": "../images/grapes.png",
+    "cena": "1",
+    "navoljo": "50"
+}]

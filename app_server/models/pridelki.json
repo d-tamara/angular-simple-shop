@@ -1,0 +1,101 @@
+[{
+    "id": "301",
+    "naziv": "Cvetlični med",
+    "link": "#",
+    "imgSrc": "../images/honey-jar.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+        ]
+},{
+    "id": "302",
+    "naziv": "Jagodna marmelada",
+    "link": "#",
+    "imgSrc": "./images/jam.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+        ]
+},{
+    "id": "303",
+    "naziv": "Jajca",
+    "link": "#",
+    "imgSrc": "../images/eggs.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+        ]
+}, {
+    "id": "304",
+    "naziv": "Jogurt",
+    "link": "#",
+    "imgSrc": "../images/frozen-yogurt.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+        ]
+}, {
+    "id": "305",
+    "naziv": "Mleko",
+    "link": "#",
+    "imgSrc": "../images/milk.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+        ]
+}]

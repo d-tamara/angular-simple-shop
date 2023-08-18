@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Dosis', sans-serif !important;
+    font-weight: 600 !important;
+    background-color: #fbc4b3 !important;
+    margin: 0 !important;
+}
+
+.navbar {
+    padding: 10px !important;
+
+}
+
+
+.spacer {
+    margin-top: 80px;
+}
+
+.navbar li {
+    margin: 7px !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    letter-spacing: 0.75px !important;
+    font-weight: 600 !important;
+}
+
+.navbar img {
+    margin-bottom: -8px !important;
+}
+
+.search {
+    padding-left: 5px !important;
+    margin-top: 7px;
+}
+
+.button, .btn {
+    border-radius: 15px !important;
+}
+
+.search input {
+    background-color: #fbc4b3 !important;
+    border: 1px solid white;
+    border-radius: 10px !important;
+    color: white !important;
+    padding-left: 10px !important;
+    font-size: 15px !important;
+    width: 200px !important;
+    justify-content: center !important;
+
+
+}
+
+.search input::placeholder {
+    color: white !important;
+
+}
+
+
+.search button {
+    border: none;
+    background-color: transparent;
+    color: white !important;
+}
+
+.searchbar-home {
+    height: 80px !important;
+}
+
+.searchbar-home input {
+    height: 65px !important;
+    border: 2px solid white !important;
+    background-color: transparent !important;
+    border-radius: 25px !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    padding-left: 20px !important;
+
+}
+
+.searchbar-home input::placeholder {
+    color: white !important;
+}
+
+.carousel {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    border-radius: 25px !important;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.carousel a {
+    margin-bottom: 10px !important;
+}
+
+.navbar-custom {
+    background-color: #fbc4b3;
+}
+
+.navbar-toggler-right {
+    margin-right: 5% !important;
+}
+
+.masthead {
+    position: relative;
+
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: url("../images/zelenjavca2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+.masthead h1 {
+    opacity: 100%;
+    font-weight: 700 !important;
+    color: white;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.2rem;
+
+}
+.masthead img {
+    margin: -130px;
+    height: 300px;
+
+}
+
+.breadcrumb {
+    padding-left: 2% !important;
+    background-color: #fbc4b3 !important;
+}
+
+.breadcrumb a {
+    color: #f26870 !important;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+.card {
+
+    margin: 30px;
+    border-radius: 25px !important;
+    border: none !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 232, 155, 0.4)), to(rgba(238,233,153, 1)));
+}
+
+.card img {
+
+    padding: 20px;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card input {
+    border-radius: 10px !important;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.card:not(:hover) {
+    transform: scale(1.00);
+    transition: 0.5s;
+}
+
+.card ul {
+    padding-left: 20px !important;
+}
+.carousel-indicators li {
+    width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
+}
+
+
+
+.map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width: 100%;
+    position:absolute;
+    }
+
+
+.b-right {
+    float: right;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+
+.page-footer {
+    background-color: #fbc4b3;
+
+}
+
+.page-footer a {
+    color: white !important;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon {
+    margin-top: 30px !important;
+}
+
+
+.footer-copyright {
+    letter-spacing: 1px !important;
+    font-weight: 400 !important;
+    color: white;
+    background-color: #fbc4b3;
+}
+
+.footer-copyright a {
+    color: white !important;
+}
+
+.footer-copyright img {
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+
+a:hover {
+    color: #709d40 !important;
+    text-decoration-line: none !important;
+}
+
+hr {
+    border-top: 4px solid white !important;
+    width: 95%;
+    border-radius: 25px !important;
+}
+
+
+
+.list-group li {
+    border-radius: 15px !important;
+    margin-bottom: 5px !important;
+}
+
+.list-group-item {
+    border-radius: 15px !important;
+    margin-bottom: 5px !important;
+}
+
+.content {
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px;
+  }
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px !important;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+   border-radius: 15px !important;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}

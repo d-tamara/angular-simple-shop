@@ -1,0 +1,30 @@
+<nav aria-label="breadcrumb" class=" navbar navbar-custom bread">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="">Domov</a></li>
+    <li class="breadcrumb-item"><a routerLink="/kategorije">Kategorije</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Zelenjava</li>
+  </ol>
+</nav>
+<!--pravilna pot do slike-->
+<!--<div>-->
+<!--  <img src="assets/images/001-tomato.png">-->
+<!--</div>-->
+<!--pravilna pot do slike-->
+
+<div class="card-group">
+  <div *ngFor="let zelenjava of zelenjava">
+    <div *ngIf="zelenjava.kategorija === 'Zelenjava'">
+      <div class="card">
+        <img src="{{zelenjava.imgSrc}}" class="card-img-top" alt ="Zelenjava">
+        <div class="card-body">
+          <div class="text-center">
+            <h5 class="card-title">{{zelenjava.naziv}}</h5>
+              <a routerLink="/kategorije/{{zelenjava._id}}" class="btn btn-outline-warning">O izdelku</a>
+              <!--<a routerLink="/kategorije/podrobnosti" class="btn btn-outline-warning">O izdelku</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

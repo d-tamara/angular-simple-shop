@@ -1,0 +1,57 @@
+<div class="card-group">
+        <div class="card">
+          
+          <div class="card-body">
+            <h4 class="card-title">Dodaj nov izdelek</h4>
+            <br>
+            <p>Vpišite potrebne informacije in vaš izdelek bo pripravljen na prodajo.</p>
+            <a href="javascript:history.back()" class="btn btn-outline-warning">Nazaj</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5>Dodaj izdelek</h5>
+            <form action ="/api/prodajalecNov/{{_id}}" id="novizdelek">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Kategorija</label>
+                        <select id="kategorija" name="kategorija" class="form-control">
+                          <option selected>Zelenjava</option>
+                          <option>Sadje</option>
+                          <option>Pijača</option>
+                          <option>Ostalo</option>
+                        </select>
+                      </div>
+
+
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Ime izdelka</label>
+                    <input type="name" name="ime" class="form-control"  placeholder="ime izdelka, npr. paradižnik">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress">Cena (eur/kg)</label>
+                  <input type="text" name="cena" class="form-control" id="cena" placeholder="cena eur/kg, npr 2,50">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputAddress2">Trenutna količina na voljo (kg)</label>
+                  <input type="text" name="kolicina" class="form-control" id="kolicina" placeholder="količina, npr 70">
+                </div>
+
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Izdelek je pridelan na naši kmetiji.
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" id="oddaja" class="btn btn-outline-success text-success">Dodaj</button>
+              </form>
+
+          </div>
+        </div>
+      </div>
+      

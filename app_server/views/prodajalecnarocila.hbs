@@ -1,0 +1,29 @@
+<div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><b>{{imeKmetije}}</b></h5><br>
+            <h5 class="card-title">Vaša zadnja naročila:</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-group">
+        {{#each narocila as |narocila|}}
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Št. naročila: {{narocila._id}} </h5>
+            <p>Cena: {{narocila.cena}}</p>
+            <p>Status: {{narocila.status}}</p>
+            <p>Izdelki: {{narocila.seznamIzdelkov}}</p>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      
+  <div class="card-group">
+  <div class="card">
+            <div class="card-body">
+                <a href="javascript:history.back()" class="btn btn-outline-warning">Nazaj</a>
+            </div>
+          </div>
+</div>

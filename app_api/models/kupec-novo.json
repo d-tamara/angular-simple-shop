@@ -1,0 +1,60 @@
+[{
+    "ime": "Katja",
+    "priimek": "Koren",
+    "email": "katja@koren.si",
+    "geslo": "Katka01121980",
+    "postnina": "3.5 eur",
+    "cena": "22.3 eur",
+    "datumDostave": "4.1.2021",
+    "nacinPlacila": "Plačilo s kartico",
+    "postnaStevilka": "4000",
+    "naslov": "Jelenčeva ulica 1",
+    "kraj": "Kranj",
+    "izdelkiVZabojcku": [{
+            "ime": "Por",
+            "kolicina": "3 kg",
+            "cena": "6 eur",
+            "imeKmetije": "Kmetija Rebernik"
+        }, {
+            "ime": "Cvetlični med",
+            "kolicina": "2 kg",
+            "cena": "18 eur",
+            "imeKmetije": "Čebelarstvo in turistična kmetija Šalamun"
+        },{
+            "ime": "Hruške",
+            "kolicina": "10 kg",
+            "cena": "13 eur",
+            "imeKmetije": "Kmetija Rebernik"
+        }]
+    }
+    ,
+{
+    "ime": "Karmen",
+    "priimek": "Košir",
+    "email": "karmen@kosir.si",
+    "geslo": "Priimekkosir",
+    "postnina": "3.5 eur",
+    "cena": "22.9 eur",
+    "datumDostave": "5.1.2021",
+    "nacinPlacila": "Plačilo s kartico",
+    "postnaStevilka": "4000",
+    "naslov": "Jelenčeva ulica 13",
+    "kraj": "Kranj",
+    "izdelkiVZabojcku": [{
+            "ime": "Paradižnik",
+            "kolicina": "3 kg",
+            "cena": "8 eur",
+            "imeKmetije": "Kmetija Rebernik"
+        }, {
+            "ime": "Cvetlični med",
+            "kolicina": "3 kg",
+            "cena": "22 eur",
+            "imeKmetije": "Čebelarstvo in turistična kmetija Šalamun"
+        },{
+            "ime": "Jabolka",
+            "kolicina": "3 kg",
+            "cena": "4 eur",
+            "imeKmetije": "Kmetija Rebernik"
+        }]
+
+}]

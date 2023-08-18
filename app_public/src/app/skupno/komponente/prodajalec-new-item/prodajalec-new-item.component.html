@@ -1,0 +1,43 @@
+<div class="card-group">
+  <div class="card">
+
+    <div class="card-body">
+      <h4 class="card-title">Dodaj nov izdelek</h4>
+      <br>
+      <div class="text-center">
+        <p>Vpišite potrebne informacije in vaš izdelek bo pripravljen na prodajo.</p>
+        <a routerLink="/prodajalecHome/{{vrniPodatkeProdajalca()}}" class="btn btn-outline-warning">Prekliči</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5>Podatki izdelka</h5>
+      <form (ngSubmit)="dodajNovIzdelek()">
+        <div *ngIf="obrazecNapaka" class="alert alert-danger" role="alert">
+          {{ obrazecNapaka }}
+        </div>
+        <div class="form-group">
+          <label>Ime</label>
+          <input [(ngModel)]="novIzdelek.ime" type="name" name="ime" class="form-control"  aria-describedby="emailHelp" placeholder="vnesite ime"/>
+        </div>
+        <div class="form-group">
+          <label>Kategorija (zelenjava, sadje, pijača, ostali pridelki</label>
+          <input [(ngModel)]="novIzdelek.kategorija" type="name" name="ime" class="form-control"  aria-describedby="emailHelp" placeholder="vnesite ime"/>
+        </div>
+        <div class="form-group">
+          <label>Cena</label>
+          <input [(ngModel)]="novIzdelek.cena" type="name" name="ime" class="form-control"  aria-describedby="emailHelp" placeholder="vnesite ime"/>
+        </div>
+        <div class="form-group">
+          <label>Količina</label>
+          <input [(ngModel)]="novIzdelek.kolicina" type="name" name="ime" class="form-control" aria-describedby="emailHelp" placeholder="vnesite ime"/>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-outline-success text-success">Shrani podatke</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

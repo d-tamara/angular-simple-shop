@@ -1,0 +1,84 @@
+[{
+    "id": "201",
+    "naziv": "Jabolčni sok",
+    "imgSrc": "../images/apple-juice.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+        ]
+},{
+    "id": "202",
+    "naziv": "Pomarančni sok",
+    "imgSrc": "../images/orange-juice.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "40"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "40"
+        }
+        ]
+},{
+    "id": "203",
+    "naziv": "Sirup žajbelj",
+    "imgSrc": "../images/sirup-zajbelj.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "7",
+            "kolicina": "30"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "6",
+            "kolicina": "120"
+        }
+        ]
+},{
+    "id": "204",
+    "naziv": "Sirup bezeg",
+    "imgSrc": "../images/sirup-bezeg.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "8",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "6",
+            "kolicina": "200"
+        }
+        ]
+},{
+    "id": "205",
+    "naziv": "Sirup meta",
+    "imgSrc": "../images/sirup-meta.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "7",
+            "kolicina": "20"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "7",
+            "kolicina": "100"
+        }
+        ]
+}]

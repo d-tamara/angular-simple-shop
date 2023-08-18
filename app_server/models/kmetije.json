@@ -1,0 +1,34 @@
+[{  
+    "id": "601",
+    "naziv": "Pr Joc",
+     "naslov": "Sedem 7, 7777 Sedma vas",
+    "telefon": "07 49 433 53",
+    "mail": "joc@joc.si"
+},{
+    "id": "602",
+    "naziv": "Sadjarstvo Demir",
+     "naslov": "Sedem 7, 7777 Sedma vas",
+    "telefon": "07 49 433 53",
+    "mail": "joc@joc.si"
+
+},{
+    "id": "603",
+    "naziv": "Proizvodnja medu Mihelič",
+     "naslov": "Sedem 7, 7777 Sedma vas",
+    "telefon": "07 49 433 53",
+    "mail": "joc@joc.si"
+    
+}, {
+    "id": "604",
+    "naziv": "Breskve Mlakar",
+     "naslov": "Sedem 7, 7777 Sedma vas",
+    "telefon": "07 49 433 53",
+    "mail": "joc@joc.si"
+
+}, {
+    "id": "605",
+    "naziv": "Sadjarstvo Jaklič",
+     "naslov": "Sedem 7, 7777 Sedma vas",
+    "telefon": "07 49 433 53",
+    "mail": "joc@joc.si"
+}]

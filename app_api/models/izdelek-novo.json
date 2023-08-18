@@ -1,0 +1,329 @@
+[{
+    "kategorija": "Pijača",
+    "naziv": "Jabolčni sok",
+    "imgSrc": "assets/images/apple-juice.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+        ]
+},{
+    "kategorija": "Pijača",
+    "naziv": "Pomarančni sok",
+    "imgSrc": "assets/images/orange-juice.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "40"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "40"
+        }
+        ]
+},{
+    "kategorija": "Pijača",
+    "naziv": "Sirup žajbelj",
+    "imgSrc": "assets/images/sirup-zajbelj.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "7",
+            "kolicina": "30"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "6",
+            "kolicina": "120"
+        }
+        ]
+},{
+    "kategorija": "Pijača",
+    "naziv": "Sirup bezeg",
+    "imgSrc": "assets/images/sirup-bezeg.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "8",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "6",
+            "kolicina": "200"
+        }
+        ]
+},{
+    "kategorija": "Pijača",
+    "naziv": "Sirup meta",
+    "imgSrc": "assets/images/sirup-meta.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "7",
+            "kolicina": "20"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "7",
+            "kolicina": "100"
+        }
+        ]
+}, {
+    "kategorija": "Ostali",
+    "naziv": "Cvetlični med",
+    "imgSrc": "assets/images/honey-jar.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+    ]
+},{
+    "kategorija": "Ostali",
+    "naziv": "Jagodna marmelada",
+    "imgSrc": "assets/images/jam.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+    ]
+},{
+    "kategorija": "Ostali",
+    "naziv": "Jajca",
+    "imgSrc": "assets/images/eggs.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+    ]
+}, {
+    "kategorija": "Ostali",
+    "naziv": "Jogurt",
+    "imgSrc": "assets/images/frozen-yogurt.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+    ]
+}, {
+    "kategorija": "Ostali",
+    "naziv": "Mleko",
+    "imgSrc": "assets/images/milk.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "5",
+            "kolicina": "50"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }, {
+            "nazivKmetije": "Sadjarstvo Mlakar",
+            "cena": "6",
+            "kolicina": "30"
+        }
+    ]
+}, {
+  "kategorija": "Sadje",
+  "naziv": "Jabolko",
+  "imgSrc": "assets/images/apple.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "2",
+      "kolicina": "0"
+    }
+  ]
+},{
+    "kategorija": "Sadje",
+  "naziv": "Hruška",
+  "imgSrc": "assets/images/pear.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "0"
+    }
+  ]
+},{
+    "kategorija": "Sadje",
+  "naziv": "Banana",
+  "imgSrc": "assets/images/banana.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "0"
+    }
+  ]
+},{
+    "kategorija": "Sadje",
+  "naziv": "Kivi",
+  "imgSrc": "assets/images/kiwi.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "80"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "23"
+    }
+  ]
+},{
+    "kategorija": "Sadje",
+  "naziv": "Grozdje",
+  "imgSrc": "assets/images/grapes.png",
+  "zaloga": [
+    {
+      "nazivKmetije": "Sadjarstvo Demir",
+      "cena": "4",
+      "kolicina": "0"
+    }, {
+      "nazivKmetije": "Breskve Mlakar",
+      "cena": "8",
+      "kolicina": "23"
+    }
+  ]
+},{  
+    "kategorija": "Zelenjava",
+    "naziv": "Paradižnik",
+    "imgSrc": "assets/images/001-tomato.png",
+    "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+},{
+    "kategorija": "Zelenjava",
+    "naziv": "Rdeča paprika",
+    "imgSrc": "assets/images/002-pepper.png",
+     "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+},{
+    "kategorija": "Zelenjava",
+    "naziv": "Kumare",
+    "imgSrc": "assets/images/004-cucumber.png",
+     "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+}, {
+    "kategorija": "Zelenjava",
+    "naziv": "Čebula",
+    "imgSrc": "assets/images/005-onion.png",
+     "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+}, {
+    "kategorija": "Zelenjava",
+    "naziv": "Por",
+    "imgSrc": "assets/images/008-leek.png",
+     "zaloga": [
+        {
+            "nazivKmetije": "Sadjarstvo Demir",
+            "cena": "4",
+            "kolicina": "80"
+        }, {
+            "nazivKmetije": "Pr Joc",
+            "cena": "3",
+            "kolicina": "100"
+        }
+        ]
+}]

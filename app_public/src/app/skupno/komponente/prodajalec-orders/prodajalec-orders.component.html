@@ -1,0 +1,30 @@
+<div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <!--<h5 class="card-title"><b>{{imeKmetije}}</b></h5><br>-->
+      <h5>Pozdravljeni, {{kmetija.ime}} {{kmetija.priimek}}!</h5>
+      <h6 class="card-title">Vaša <strong>{{kmetija.imeKmetije}}</strong> je prejela naročila:</h6>
+    </div>
+  </div>
+</div>
+
+<div class="card-group">
+  <div class="card-body" *ngFor="let narocilo of kmetija.narocila">
+  <div class="card">
+    <div class="card-body">
+      <h6 class="card-title">Št. naročila: <strong>{{narocilo._id}}</strong></h6>
+      <p>Cena: {{narocilo.cena}}</p>
+      <p>Status: {{narocilo.status}}</p>
+      <p>Izdelki: {{narocilo.seznamIzdelkov}}</p>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <a href="javascript:history.back()" class="btn btn-outline-warning">Nazaj</a>
+    </div>
+  </div>
+</div>
+

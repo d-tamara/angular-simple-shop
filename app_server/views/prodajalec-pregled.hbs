@@ -1,0 +1,123 @@
+<div class="card-group">
+  <div class="card">
+            <div class="card-body">
+                <h5>Pozdravljeni, {{ime}} {{priimek}}!</h5>
+            </div>
+          </div>
+</div>
+
+
+<div class="card-group">
+  <div class="card">
+            <div class="card-body">
+                <a href="/prodajalecNov/{{_id}}"class="btn btn-outline-warning"> + Dodaj nov izdelek</a>
+            </div>
+          </div>
+</div>
+{{!--<div class="card-group">--}}
+{{!--        <div class="card">--}}
+{{!--          <div class="card-body">--}}
+{{!--            <h5 class="card-title"><b>Kategorija: zelenjava</b></h5>--}}
+{{!--          </div>--}}
+{{!--        </div>--}}
+{{!--</div>--}}
+
+{{!-- TUKI MORE PRIDT SEZNAM IZDELKOV --}}
+      
+      <div class= "card-group">
+    {{#each izdelki as |izdelek|}}
+        <div class="card col-sm-3">
+          {{!--<img src="{{izdelek.slika}}" class="card-img-top" alt="...">--}}
+          <div class="card-body">
+            <h5 class="card-title">{{izdelek.ime}}</h5>
+            <p>Cena: {{izdelek.cena}}</p>
+            <p>Na voljo: {{izdelek.kolicina}}</p>
+            <a href="/prodajalecUredi/{{_id}}/{{izdelek._id}}" class="btn btn-outline-warning">Uredi</a> <a href="#" class="btn btn-outline-warning">Izbriši</a>
+          </div>
+        </div>
+        {{/each}}
+        </div>
+        
+     
+     
+
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style="color: orange;"><b>Več</b></h5>
+            
+            <br>
+            <a href="/narocila/{{_id}}"class="btn btn-outline-warning">Poglej naročila</a><br><br>
+            <a href="/prodajalecPodatki/{{_id}}"class="btn btn-outline-warning">Uredi podatke o kmetiji</a>
+
+          </div>
+        </div>
+      </div>
+      
+      {{!--<div class="card-group">--}}
+      {{!--  {{#each narocila as |narocilo|}}--}}
+      {{!--  <div class="card">--}}
+      {{!--    <div class="card-body">--}}
+      {{!--      <h5 class="card-title">Št. naročila: {{narocilo.stNarocila}} </h5>--}}
+      {{!--      <p>Cena: {{narocilo.cena}}</p>--}}
+      {{!--      <p>Status:{{narocilo.status}}</p>--}}
+      {{!--      <p>Izdelki: {{narocilo.izdelki}}</p>--}}
+      {{!--    </div>--}}
+      {{!--  </div>--}}
+      {{!--  {{/each}}--}}
+      {{!--</div>--}}
+
+      {{!--<div class="card-group">--}}
+      {{!--  <div class="card">--}}
+      {{!--    <div class="card-body">--}}
+      {{!--      <h5 class="card-title" style="color: orange;"><b>Podatki o kmetiji</b></h5>--}}
+      {{!--      <p>Ime kmetije: {{ime}}</p>--}}
+      {{!--      <p>Naslov kmetije: {{naslov}}</p>--}}
+      {{!--      <p>Telefon: {{telefon}}</p>--}}
+      {{!--      <p>E-mail: {{mail}}</p>--}}
+      {{!--      <br>--}}
+      {{!--      <h5>Uredi podatke</h5>--}}
+      {{!--      <form action ="/profil/prodajalecpregled">--}}
+      {{!--        <div class="form-group">--}}
+      {{!--            <label for="exampleInputEmail1">Ime kmetije</label>--}}
+      {{!--            <input type="name" class="form-control" id="imeKmetije" aria-describedby="emailHelp" placeholder="ime kmetije">--}}
+      {{!--          </div>--}}
+      {{!--          <div class="form-group">--}}
+      {{!--            <label for="exampleInputEmail1">Naslov</label>--}}
+      {{!--            <input type="name" class="form-control" id="naslovKmetije" aria-describedby="emailHelp" placeholder="naslov kmetije">--}}
+      {{!--          </div>--}}
+      {{!--          <div class="form-group">--}}
+      {{!--            <label for="exampleInputEmail1">Kraj</label>--}}
+      {{!--            <input type="name" class="form-control" id="krajKmetije" aria-describedby="emailHelp" placeholder="kraj">--}}
+      {{!--          </div>--}}
+      {{!--          <div class="form-group">--}}
+      {{!--            <label for="exampleInputEmail1">Telefon</label>--}}
+      {{!--            <input type="name" class="form-control" id="telefonKmetije" aria-describedby="emailHelp" placeholder="telefon">--}}
+      {{!--          </div>--}}
+      {{!--          <div class="form-group">--}}
+      {{!--            <label for="exampleInputEmail1">E-mail</label>--}}
+      {{!--            <input type="mail" class="form-control" id="mejlKmetije" aria-describedby="emailHelp" placeholder="e-mail">--}}
+      {{!--          </div>--}}
+              
+      {{!--        <button type="submit" id="gumbShrani" class="btn btn-outline-warning float-right">Shrani</button>--}}
+      {{!--        </form>--}}
+      {{!--    <script> --}}
+      {{!--            var gumb = document.querySelector("#gumbShrani");--}}
+      {{!--            gumb.addEventListener("click", function() {--}}
+      {{!--              var vnesenaTelefonska = document.querySelector("#telefonKmetije").value;--}}
+      {{!--              var regPhoneNum = /^\d{3} \d{3} \d{3}$/;--}}
+      {{!--              if(!(regPhoneNum.test(vnesenaTelefonska))) {--}}
+      {{!--                alert("Napačno vnesena telefonska številka!");--}}
+      {{!--                event.preventDefault();--}}
+      {{!--              } else {--}}
+      {{!--                alert("Uspešno shranili podatke!");--}}
+      {{!--              }--}}
+                    
+      {{!--            });--}}
+      {{!--        </script>--}}
+      {{!--    </div>--}}
+      {{!--  </div>--}}
+      {{!--</div>--}}
+      
+      
+      

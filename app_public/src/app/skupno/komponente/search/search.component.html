@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-body">
+    <h4>Iskanje</h4>
+    <br>
+    <form class="search">
+      <input name="searchInput" [(ngModel)]="searchInput" type="text" placeholder="Brskajte med izdelki ...">
+          <!--     <button type="submit"><i class="fa fa-search white-text fa-lg"></i></button>-->
+      <article>
+<!--        <ul>-->
+<!--          <li *ngFor="let pridelki of-->
+<!--                        pridelki | search: searchInput">-->
+<!--            {{pridelki}}-->
+<!--          </li>-->
+<!--        </ul>-->
+        <ul>
+          <li *ngFor="let pridelki of
+                        pridelki | search: searchInput">
+            {{pridelki}}
+          </li>
+        </ul>
+      </article>
+    </form>
+  </div>
+</div>

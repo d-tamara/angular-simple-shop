@@ -1,0 +1,43 @@
+<div class="card-group">
+        <div class="card">
+          <div class="card-body">
+              <br>
+            <h5 class="card-title" style="text-align:center;">REGISTRACIJA</h5>
+            <p style="text-align:center;">novega uporabnika.</p>
+            <br>
+            <p style="text-align:center;">Že imate račun?</p>
+            
+            <a href="/profil/prijava-kupec"><p style="text-align:center;">Prijavite se.</p></a>
+            <br>
+            <p style="text-align: center;">Se želite registrirati kot prodajalec?</p>
+						<a href="/profil/registracija-prodajalec"><p style="text-align: center;">Kliknite tukaj.</p></a>
+
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+            <form action ="/api/registracijaKupec" id ="regKupec" method="post" role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Ime</label>
+                    <input type="name" name="ime" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="vnesite ime" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Priimek</label>
+                    <input type="name" name="priimek" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="vnesite priimek" required/>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email naslov</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="vnesite email naslov" required/>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Geslo</label>
+                  <input type="password" name="geslo" class="form-control" id="exampleInputPassword1" placeholder="vnesite geslo" minlength="8" required/>
+                </div>
+                <br>
+                <div class="text-center">
+                <button type="submit" id="oddaja" class="btn btn-outline-success text-success">Registracija</button>
+                </div>
+              </form>
+          </div>
+        </div>
+        </div>

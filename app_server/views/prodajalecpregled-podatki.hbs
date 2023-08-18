@@ -1,0 +1,63 @@
+<div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" style="color: orange;"><b>Podatki o kmetiji</b></h5>
+            <p><b>Id kmetije:</b> {{_id}}</p>
+            <p><b>Ime kmetije:</b> {{imeKmetije}}</p>
+            <p><b>Naslov kmetije:</b> {{naslovKmetije}}, {{krajKmetije}}</p>
+            <p><b>Telefon:</b> {{telefon}}</p>
+            <p><b>E-mail:</b> {{email}}</p>
+            <br>
+            <h5>Uredi podatke</h5>
+            <form action="/prodajalecPodatki/{{_id}}" method="post" role="form">
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Ime kmetije</label>
+                  <input type="name" name="imeKmetije" class="form-control" aria-describedby="emailHelp" placeholder="ime kmetije" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Naslov</label>
+                  <input type="name" class="form-control" name="naslovKmetije" aria-describedby="emailHelp" placeholder="naslov kmetije" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Kraj</label>
+                  <input type="name" class="form-control" name="krajKmetije" aria-describedby="emailHelp" placeholder="kraj" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Telefon</label>
+                  <input type="name" class="form-control" name="telefon" aria-describedby="emailHelp" placeholder="telefon" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input type="mail" class="form-control" name="email" aria-describedby="emailHelp" placeholder="e-mail">
+                </div>
+              
+              <button type="submit" id="gumbShrani" onclick="checkPhoneNumber()" class="btn btn-outline-warning float-right">Shrani</button>
+              </form>
+              
+              <script src="../javascripts/skripte.js"></script>
+          <!--<script> 
+                  var gumb = document.querySelector("#gumbShrani");
+                  gumb.addEventListener("click", function() {
+                    var vnesenaTelefonska = document.querySelector("#telefonKmetije").value;
+                    var regPhoneNum = /^\d{3} ?\d{3} ?\d{3}$/;
+                    if(!(regPhoneNum.test(vnesenaTelefonska))) {
+                      alert("Napačno vnesena telefonska številka!");
+                      event.preventDefault();
+                    } else {
+                      alert("Uspešno shranili podatke!");
+                    }
+                    
+                  });
+              </script>-->
+          </div>
+        </div>
+      </div>
+      
+      
+  <div class="card-group">
+  <div class="card">
+            <div class="card-body">
+                <a href="javascript:history.back()" class="btn btn-outline-warning">Nazaj</a>
+            </div>
+          </div>
+</div>

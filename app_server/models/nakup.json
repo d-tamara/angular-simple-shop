@@ -1,0 +1,35 @@
+[{
+    "id": "500",
+    "postnina": "3.50",
+    "cena": "20",
+    "dostava": "1.12.2020",
+    "izdelki": [
+        {
+            "naziv": "Paradižnik",
+            "kolicina": "2",
+            "cena": "3",
+            "kmetija": "Kmetija Mlakar"
+        },{
+            "naziv": "Kaki",
+            "kolicina": "1",
+            "cena": "4",
+            "kmetija": "Moj travnik"
+        }]
+},{
+    "id": "501",
+    "postnina": "3.50",
+    "cena": "20",
+    "dostava": "1.12.2020",
+    "izdelki": [
+        {
+            "naziv": "Paradižnik",
+            "kolicina": "2",
+            "cena": "3",
+            "kmetija": "Kmetija Mlakar"
+        },{
+            "naziv": "Kaki",
+            "kolicina": "1",
+            "cena": "4",
+            "kmetija": "Moj travnik"
+        }]
+}]

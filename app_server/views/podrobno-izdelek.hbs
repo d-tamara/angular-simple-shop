@@ -1,0 +1,28 @@
+
+
+<div class="card-group">
+        <div class="card">
+          <div class="card-body">
+              <div class="text-center">
+                    <img class="card-img-top" src={{imgSrc}}>
+              </div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card-body">
+            <h5>{{naziv}}</h5>
+            <p>Kje je na voljo:</p>
+            <ul>
+                {{#each zaloga as |zaloga|}}
+                <li>
+                    <p><strong>{{zaloga.nazivKmetije}}</strong></p> <a class="b-right btn btn-warning text-success" href="#">+ Dodaj v zabojček</a>
+                    <p>Na voljo: {{zaloga.kolicina}} kg </p>
+                    <p>{{{statuszaloge zaloga.kolicina}}}</p>
+                    <p>Cena: {{cena}} eur/kg</p>
+                </li>
+                {{/each}}
+            </ul>
+            <br>
+          </div>
+        </div>
+</div>

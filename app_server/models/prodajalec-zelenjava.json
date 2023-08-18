@@ -1,0 +1,31 @@
+[{
+    "id": "001",
+    "ime": "Paradižnik",
+    "slika": "../images/001-tomato.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "002",
+    "ime": "Rdeča paprika",
+    "slika": "../images/002-pepper.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "003",
+    "ime": "Kumare",
+    "slika": "../images/004-cucumber.png",
+    "cena": "1 eur/kg",
+    "navoljo": "50"
+  }, {
+    "id": "004",
+    "ime": "Čebula",
+    "slika": "../images/005-onion.png",
+    "cena": "1 eur/kg",
+    "navoljo": "100"
+  }, {
+    "id": "005",
+    "ime": "Por",
+    "slika": "../images/008-leek.png",
+    "cena": "1",
+    "navoljo": "50"
+}]

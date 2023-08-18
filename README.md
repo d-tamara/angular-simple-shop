@@ -1,7 +1,5 @@
 <b>BUYLOCAL<b>
 
-**1. LP**
-
 Spletna aplikacija prodaje in nakupovanja domačih izdelkov - od domačih pridelkov (zelenjava, sadje, meso) do domačih napitkov (mošt, vino, sadni sirupi in sokovi).
 
 Ob vstopu se je na aplikacijo potrebno registrirati ali vpisati, možnosti sta dve: kot prodajalec ali pa kot kupec.
@@ -9,7 +7,6 @@ Ob vstopu se je na aplikacijo potrebno registrirati ali vpisati, možnosti sta d
 Prodajalec na spletno aplikacijo registrira svojo “trgovino/kmetijo” in objavi ponudbo ter zalogo izdelkov. To lahko sproti ureja in izdelke dodaja/briše, odvisno od njegove zaloge. Prodajalec ima pregled tudi nad prejetimi naročili.
 
 Kupec na spletni aplikaciji brska po seznamu in/ali zemljevidu lokalnih ponudnikov, oziroma išče glede na željen izdelek. Vse izbrane artikle ob koncu nakupovanja najde v zabojčku, kjer lahko pregleda svoje naročilo. Ko se odloči za nakup, vnese podatke za dostavo (osebni podatki). Naročeno lahko plača prek aplikacije ali ob prevzemu.
-
 
 PRIJAVA IN REGISTRACIJA
 Uporabnik spletne aplikacije se lahko prijavi kot kupec ali prodajalec. 
@@ -87,45 +84,31 @@ V Heroku okolju aplikacijo zaženemo na povezavi https://buylocal-heroku.herokua
 
 Za AWS Cloud9:
 V AWS Cloud9 okolju odpremo nov projekt in vanj uvozimo celotno mapo projekta z ukazom:
-$ git clone https://github.com/sp-2020-2021/LP-04.git
+$ git clone https://github.com/d-tamara/angular-simple-shop
 $ npm install
 $ npm start
 Za lokalno zaganjanje v AWS okolju izberemo Preview in spodaj prikazano aplikacijo prikažemo v novem zavihku, s klikom na gumb z dvemi okni.
 
 Za Docker:
 V Docker okolju odpremo nov projekt in vanj uvozimo celotno mapo projekta z ukazom: (ukazni znak se avtomatsko dodeli glede na privzeto lupino operacijskega sistema)
-git clone https://github.com/sp-2020-2021/LP-04.git
-cd LP-04
-npm install
-npm start
+$ git clone https://github.com/d-tamara/angular-simple-shop
+$ npm install
+$ npm start
 Za lokalno zaganjanje v Docker okolju odpremo brskalnik in v iskalno vrstico vpišemo naslov http://localhost:3000/.
-
-**4. & 5. LP**
 
 ***NAVODILA ZA ZAGON APLIKACIJE***
 V Heroku okolju aplikacijo zaženemo na povezavi https://buylocal-heroku.herokuapp.com/
-
 Lokalno odpremo nov projekt in vanj uvozimo celotno mapo projekta z ukazom ter sledimo spodnjim ukazom:
 
-$ git clone https://github.com/sp-2020-2021/LP-04.git
-
-$ cd LP-04
-
+$ git clone https://github.com/d-tamara/angular-simple-shop
 $ npm install
-
 $ cd app_public
-
 $ npm install
-
 $ cd ..
-
 $ npm install express-jwt --save
-
 $ npm start
 
-V novem terminalu se premaknemo v LP-04/app_public z ukazom in izvedemo spodnje ukaze:
-
-$ cd app_public
+V novem terminalu se premaknemo v app_public z ukazom in izvedemo:
 
 $ ng serve --open
 
@@ -139,5 +122,3 @@ Aplikacija Buylocal ponuja uporabo 3 vrstam uporabnikom: **gostu**, **kupcu** in
 Gost spletno stran lahko pregleduje do te mere, da vidi izdelke, sodelujoče kmetije, se lahko prijavi kot kupec ali prodajalec. 
 Kupec, v primerjavi z gostom, vidi še podatke o ceni izdelkov in lahko doda izdelek v zabojček. Prav tako se mu prikaže zabojček z dodanimi izdelki in ima možnost nadaljevati nakup.
 Prodajalec lahko na strani prodaja in kupuje, v primerjavi s kupcem, ima pregledno ploščo, kjer vidi svoje podatke o kmetiji, jih lahko posodobi, vidi svoje izdelke in pretekla naročila.
-
-"# angular-simple-shop" 

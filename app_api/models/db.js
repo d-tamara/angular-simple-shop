@@ -14,8 +14,6 @@ mongoose.connect(dbURI, {
   useFindAndModify: false
 });
 
-//var dbURI = 'mongodb+srv://app:fl0rov3tsQR6dRYS@cluster0.tyjao.mongodb.net/Cluster0';
-
 mongoose.connection.on('connected', () => {
   console.log(`Mongoose je povezan na ${dbURI}.`);
 });
